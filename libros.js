@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Libros = void 0;
-var fs = require("readline-sync");
 var Libros = /** @class */ (function () {
     //constructor
     function Libros(pNombre, pTipo) {
@@ -21,12 +20,6 @@ var Libros = /** @class */ (function () {
     };
     Libros.prototype.setTipo = function (pTipo) {
         this.tipo = pTipo;
-    };
-    Libros.prototype.nombreDeLibro = function () {
-        //let idLibro: string = fs.question("Id: ") 
-        var nombreLibro = fs.question("Nombre del libro: ");
-        var tipoLibro = fs.question("que tipo de libro es: ");
-        return { nombreLibro: nombreLibro, tipoLibro: tipoLibro };
     };
     return Libros;
 }());
