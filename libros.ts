@@ -1,14 +1,12 @@
 import * as fs from 'readline-sync';
 export class Libros {
-
+    private idLibro: string
     private nombre: string;
     private tipo: string;
     //constructor
     constructor(pNombre: string, pTipo: string) {
         this.nombre = pNombre;
-        this.tipo = pTipo;
-
-       
+        this.tipo = pTipo;       
     };
 
     //get y set
@@ -24,13 +22,4 @@ export class Libros {
     public setTipo(pTipo: string): void {
         this.tipo = pTipo;
     }
-
-    public nombreDeLibro(): {nombreLibro: string, tipoLibro: string} {
-        //let idLibro: string = fs.question("Id: ") 
-        let nombreLibro: string = fs.question("Nombre del libro: ")
-        let tipoLibro: string = fs.question("que tipo de libro es: ")
-      
-            return {nombreLibro,tipoLibro};
-}
-
 }
