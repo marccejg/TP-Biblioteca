@@ -23,18 +23,10 @@ export class Biblioteca {
     public retiraLibro(libro:Libros[]) {
     }  
 
-    public nombreDeLibro(): {nombreLibro: string, tipoLibro: string} {
-    //let idLibro: string = fs.question("Id: ") 
-    let nombreLibro: string = fs.question("Nombre del libro: ")
-    let tipoLibro: string = fs.question("que tipo de libro es: ")
-  
-        return {nombreLibro,tipoLibro};
+    
 
     }
 
    
 
-
-
-}
 

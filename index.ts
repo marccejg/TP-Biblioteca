@@ -10,9 +10,10 @@ console.log(listadoLibros)
 let biblioteca = new Biblioteca ("Recreo",listadoLibros);
 
 
-//let libro1 = new Libros(nombreLibro,tipoLibro)
-let libro1;
+
+let libro1
 libro1.nombreDeLibro()
+libro1 = new Libros(nombreLibro,tipoLibro)
 biblioteca.ingresarLibro(libro1)
 
 

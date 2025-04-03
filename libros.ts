@@ -32,4 +32,5 @@ export class Libros {
       
             return {nombreLibro,tipoLibro};
 }
+
 }
