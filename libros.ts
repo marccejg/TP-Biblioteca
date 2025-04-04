@@ -1,5 +1,5 @@
 import * as fs from 'readline-sync';
-export class Libros {
+export class Libro {
     private idLibro: string
     private nombre: string;
     private tipo: string;

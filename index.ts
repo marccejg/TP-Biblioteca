@@ -1,20 +1,18 @@
 console.clear();
 import * as fs from "readline-sync";
-import { Libros } from "./libros";
+import { Libro } from "./libros";
 import { Biblioteca } from "./biblioteca";
 
 
-let listadoLibros: Libros[] = [];
+const listadoLibros: Libro[] = [];
 console.log(listadoLibros);
 
-let biblioteca = new Biblioteca("Recreo", listadoLibros);
-
+const biblioteca = new Biblioteca("Recreo", listadoLibros);
 
 biblioteca.ingresarLibro(biblioteca.nombreDeLibro());
-let libro2 = biblioteca.nombreDeLibro();
-
-console.log(listadoLibros);
+biblioteca.ingresarLibro(biblioteca.nombreDeLibro());
 
 biblioteca.retiraLibro();
 
+console.log(biblioteca.getLibros());
 
