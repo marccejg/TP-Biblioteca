@@ -10,23 +10,11 @@ console.log(listadoLibros);
 let biblioteca = new Biblioteca("Recreo", listadoLibros);
 
 
-let libro1 = biblioteca.nombreDeLibro();
-biblioteca.ingresarLibro(libro1);
-
+biblioteca.ingresarLibro(biblioteca.nombreDeLibro());
 let libro2 = biblioteca.nombreDeLibro();
-biblioteca.ingresarLibro(libro2);
 
-console.log(biblioteca.retiraLibro());
+console.log(listadoLibros);
 
+biblioteca.retiraLibro();
 
-
-
-
-
-
-
-
-
-
-//biblioteca.ingresarLibro()
 
