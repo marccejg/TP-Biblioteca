@@ -12,16 +12,24 @@ export class Biblioteca {
     public getNombre() {
         return this.nombre;
     }
+
     public getLibros() {
         return this.libros;
     }
+    public setNombre(pNombre: string): void {
+        this.nombre = pNombre;
+    }
+    public setLibros(pLibros: Libro[]): void {
+        this.libros = pLibros;
+    }
+
     //////////////////
     public nombreDeLibro = (): Libro => {
         let nombre = fs.question("Nombre del libro: ");
         let tipo = fs.question("Que tipo de libro es?: ");
         return new Libro(nombre, tipo);
     }
-    public ingresarLibro(libro:Libro) {
+    public ingresarLibro(libro: Libro) {
 
         this.libros.push(libro)
         console.log(`Usted está agregando el libro: ${libro.getNombre()}`);
@@ -30,7 +38,9 @@ export class Biblioteca {
 
     ////////////////////
 
-    public cantidadLibros() { }
+    public cantidadLibros() {
+        console.log(`Usted tiene: ${this.libros.length} libros`);
+    }
 
     public retiraLibro() {
         console.log(this.libros);

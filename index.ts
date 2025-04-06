@@ -11,8 +11,9 @@ const biblioteca = new Biblioteca("Recreo", listadoLibros);
 
 biblioteca.ingresarLibro(biblioteca.nombreDeLibro());
 biblioteca.ingresarLibro(biblioteca.nombreDeLibro());
-
+biblioteca.ingresarLibro(biblioteca.nombreDeLibro());
 biblioteca.retiraLibro();
 
 console.log(biblioteca.getLibros());
+console.log(biblioteca.cantidadLibros());
 
